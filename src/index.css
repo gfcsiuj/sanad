@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #c3a343;
+  --color-gold-light: #dfc87a;
+  --color-gold-dark: #917726;
+  --color-ink: #050505;
+  --color-surface: #0f0f0f;
+  --color-surface-light: #1a1a1a;
+  
+  --font-sans: "Cairo", system-ui, -apple-system, sans-serif;
+  --font-display: "Tajawal", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-ink);
+  color: #ffffff;
+  direction: rtl; 
+}
+
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: radial-gradient(circle at center, rgba(195, 163, 67, 0.15) 1px, transparent 1px);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, var(--color-gold-light) 0%, var(--color-gold) 50%, var(--color-gold-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bento-card {
+  background: linear-gradient(145deg, rgba(30, 30, 30, 0.6) 0%, rgba(15, 15, 15, 0.8) 100%);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+}
+
+.dir-ltr {
+  direction: ltr;
+  display: inline-block;
+}
+
+@keyframes shine {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+.shine-effect {
+  background: linear-gradient(120deg, transparent 30%, rgba(195, 163, 67, 0.4) 50%, transparent 70%);
+  background-size: 200% auto;
+  animation: shine 4s ease-in-out infinite;
+}
+
+.luxury-border {
+  position: relative;
+}
+.luxury-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(195, 163, 67, 0.2), transparent 50%, rgba(195, 163, 67, 0.1));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.luxury-border::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: radial-gradient(circle at top left, var(--color-gold-light) 0%, var(--color-gold) 15%, transparent 40%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 20;
+  opacity: 0.85;
+  transition: all 0.5s ease-out;
+}
+
+.luxury-border:hover::after {
+  background: radial-gradient(circle at top left, var(--color-gold-light) 0%, var(--color-gold) 35%, transparent 65%);
+  opacity: 1;
+  padding: 2px;
+}
