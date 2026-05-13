@@ -126,7 +126,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gold/30 blur-[50px] md:blur-[70px] rounded-full scale-[1.4] opacity-50 pointer-events-none z-0" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/3 h-2/3 bg-white/10 blur-[30px] rounded-full z-0 pointer-events-none" /> 
             
-            <div className="w-40 h-40 sm:w-52 sm:h-52 md:w-72 md:h-72 relative z-10 flex items-center justify-center">
+            <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 relative z-10 flex items-center justify-center">
               <img 
                 src={data.logoUrl} 
                 alt={data.title} 
