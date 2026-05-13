@@ -50,11 +50,11 @@ const SocialCard = ({ href, icon: Icon, title, desc, delay, colSpan = "col-span-
     transition={{ delay }}
     whileHover={{ scale: 1.05 }} 
     whileTap={{ scale: 0.95 }}
-    className={`${colSpan} bento-card luxury-border p-4 sm:p-5 md:p-6 rounded-[1.25rem] md:rounded-[2rem] group flex flex-col items-center justify-center text-center overflow-hidden relative shadow-lg hover:shadow-[0_15px_30px_rgba(0,0,0,0.6)]`}
+    className={`${colSpan} bento-card luxury-border p-4 sm:p-5 md:p-6 rounded-[1.25rem] md:rounded-[2rem] group flex flex-col items-center justify-center text-center overflow-hidden relative shadow-lg[...]
   >
-    <div className="absolute -top-12 -right-12 sm:-top-16 sm:-right-16 w-28 h-28 sm:w-36 sm:h-36 bg-gold opacity-15 blur-[35px] group-hover:opacity-40 transition-opacity duration-700 pointer-events-none z-0"></div>
+    <div className="absolute -top-12 -right-12 sm:-top-16 sm:-right-16 w-28 h-28 sm:w-36 sm:h-36 bg-gold opacity-15 blur-[35px] group-hover:opacity-40 transition-opacity duration-700 pointer-events-no[...]
 
-    <div className="w-12 h-12 md:w-16 md:h-16 rounded-[1rem] md:rounded-[1.2rem] border border-gold/30 flex items-center justify-center mb-3 md:mb-4 bg-surface/80 text-gold group-hover:bg-gold group-hover:text-ink transition-colors duration-500 z-10 relative shadow-[0_0_15px_rgba(195,163,67,0.1)] group-hover:shadow-[0_0_25px_rgba(195,163,67,0.4)]">
+    <div className="w-12 h-12 md:w-16 md:h-16 rounded-[1rem] md:rounded-[1.2rem] border border-gold/30 flex items-center justify-center mb-3 md:mb-4 bg-surface/80 text-gold group-hover:bg-gold group-h[...]
       <Icon className="w-6 h-6 md:w-8 md:h-8" />
     </div>
 
@@ -126,7 +126,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gold/30 blur-[50px] md:blur-[70px] rounded-full scale-[1.4] opacity-50 pointer-events-none z-0" />
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2/3 h-2/3 bg-white/10 blur-[30px] rounded-full z-0 pointer-events-none" /> 
             
-            <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 relative z-10 flex items-center justify-center">
+            <div className="w-56 h-56 sm:w-80 sm:h-80 md:w-[450px] md:h-[450px] relative z-10 flex items-center justify-center">
               <img 
                 src={data.logoUrl} 
                 alt={data.title} 
@@ -149,7 +149,7 @@ export default function Home() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.4 + (i * 0.1) }}
-                className="flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-gold/30 bg-gold/10 text-gold-light text-xs md:text-base font-medium backdrop-blur-md hover:bg-gold/20 hover:scale-105 transition-all shadow-[0_0_15px_rgba(195,163,67,0.05)]"
+                className="flex items-center gap-1.5 md:gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-gold/30 bg-gold/10 text-gold-light text-xs md:text-base font-medium backdrop-blur-m[...]
               >
                 <Box className="w-4 h-4" />
                 {feature}
@@ -164,7 +164,7 @@ export default function Home() {
             transition={{ delay: 0.5 }}
             className="mb-8 w-full flex justify-center z-20"
         >
-            <div className="inline-flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 px-6 md:px-10 py-3 md:py-4 rounded-3xl border border-gold/40 bg-surface/90 backdrop-blur-xl shadow-[0_0_25px_rgba(195,163,67,0.15)] relative overflow-hidden group">
+            <div className="inline-flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 px-6 md:px-10 py-3 md:py-4 rounded-3xl border border-gold/40 bg-surface/90 backdrop-blur-xl shad[...]
                 <div className="absolute inset-0 w-full h-full shine-effect pointer-events-none opacity-50"></div>
                 
                 <div className="flex items-center gap-2 relative z-10">
@@ -191,12 +191,12 @@ export default function Home() {
               transition={{ delay: 0.6 }}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
-              className="col-span-2 lg:col-span-4 bento-card luxury-border p-5 sm:p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] group flex items-center justify-between relative overflow-hidden shadow-lg hover:shadow-[0_15px_30px_rgba(0,0,0,0.6)]"
+              className="col-span-2 lg:col-span-4 bento-card luxury-border p-5 sm:p-6 md:p-8 rounded-[1.5rem] md:rounded-[2rem] group flex items-center justify-between relative overflow-hidden shadow-[...]
             >
               <div className="absolute -top-16 -right-16 w-36 h-36 md:w-56 md:h-56 bg-gold opacity-15 blur-[40px] group-hover:opacity-40 transition-opacity duration-700 pointer-events-none z-0"></div>
 
               <div className="flex-1 pr-1 md:pr-4 relative z-10">
-                <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 min-h-[28px] text-[10px] sm:text-xs md:text-sm rounded-full bg-gold/10 text-gold-light font-bold mb-3 border border-gold/30 backdrop-blur-sm self-start">
+                <div className="inline-flex items-center gap-1.5 md:gap-2 px-3 py-1.5 min-h-[28px] text-[10px] sm:text-xs md:text-sm rounded-full bg-gold/10 text-gold-light font-bold mb-3 border borde[...]
                   <span className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-green-500 animate-[pulse_1s_ease-in-out_infinite]"></span>
                   متاح الآن للرد السريع
                 </div>
@@ -204,7 +204,7 @@ export default function Home() {
                 <p className="text-gray-400 text-xs sm:text-sm md:text-base pr-1">{primaryLink.desc}</p>
               </div>
               
-              <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-[1rem] md:rounded-[1.5rem] border border-gold/40 flex flex-shrink-0 items-center justify-center bg-surface/90 text-gold group-hover:bg-gold group-hover:text-ink transition-all duration-500 z-10 relative shadow-[0_0_20px_rgba(195,163,67,0.15)] group-hover:shadow-[0_0_30px_rgba(195,163,67,0.4)] group-hover:scale-110 ml-1">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-[1rem] md:rounded-[1.5rem] border border-gold/40 flex flex-shrink-0 items-center justify-center bg-surface/90 text-gold [...]
                 {(() => {
                   const Icon = getPlatformIcon(primaryLink.platform);
                   return <Icon className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10" />;
@@ -236,7 +236,7 @@ export default function Home() {
         >
           <div className="flex items-center justify-between gap-3 md:gap-5 w-full max-w-2xl px-2 mb-8 mt-2">
             <div className="h-[2px] w-full bg-gradient-to-r from-transparent via-gold to-gold-dark opacity-80 rounded-full shadow-[0_0_10px_rgba(195,163,67,0.5)]"></div>
-            <div className="inline-flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-full border border-gold/40 bg-surface/80 backdrop-blur-md shadow-[0_0_20px_rgba(195,163,67,0.15)] shrink-0 relative overflow-hidden group">
+            <div className="inline-flex items-center justify-center gap-2.5 px-6 py-2.5 rounded-full border border-gold/40 bg-surface/80 backdrop-blur-md shadow-[0_0_20px_rgba(195,163,67,0.15)] shrink[...]
               <div className="absolute inset-0 w-full h-full shine-effect pointer-events-none opacity-40"></div>
               <MapPin className="w-5 h-5 md:w-6 md:h-6 text-gold animate-bounce shrink-0 relative z-10" />
               <h2 className="text-xl md:text-2xl font-display font-bold text-gold whitespace-nowrap pt-1 relative z-10 tracking-wide">
@@ -249,13 +249,13 @@ export default function Home() {
           <p className="text-gray-300 mb-8 text-center max-w-lg text-base md:text-lg">
             بغداد ـ الشعب ـ مجاور سوق 4000 النموذجي
             <br />
-            <a href="https://maps.app.goo.gl/WP1zWEA6ZjwLffBo7?g_st=atm" target="_blank" rel="noopener noreferrer" className="text-gold-light hover:text-gold inline-flex items-center gap-1.5 mt-4 text-xs sm:text-sm font-bold transition-all bg-gold/10 px-5 py-2.5 rounded-full border border-gold/30 hover:bg-gold/20 hover:shadow-[0_0_15px_rgba(195,163,67,0.3)] hover:scale-105">
+            <a href="https://maps.app.goo.gl/WP1zWEA6ZjwLffBo7?g_st=atm" target="_blank" rel="noopener noreferrer" className="text-gold-light hover:text-gold inline-flex items-center gap-1.5 mt-4 text[...]
               فتح في تطبيق الخرائط <ExternalLink className="w-4 h-4" />
             </a>
           </p>
 
           <div className="w-full h-[300px] sm:h-[350px] md:h-[500px] rounded-[1.5rem] md:rounded-[2rem] overflow-hidden luxury-border bento-card p-1.5 md:p-2 shadow-xl md:shadow-2xl relative group">
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gold/20 blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none z-0"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gold/20 blur-[60px] opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-ev[...]
 
             <div className="w-full h-full rounded-[1.25rem] md:rounded-3xl overflow-hidden relative bg-surface-light/50 z-10">
               <div className="absolute inset-0 bg-black/10 pointer-events-none group-hover:bg-black/0 transition-colors duration-500 z-10"></div>
